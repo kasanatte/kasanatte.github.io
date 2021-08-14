@@ -5,10 +5,6 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="index,follow">
-      
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -26,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Kasane&#39;s Blog</title>
+  <title>深度学习（一）：准备 - Kasane&#39;s Blog</title>
+  
+    <meta name="keywords" content="深度学习">
   
 
   
@@ -124,7 +122,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -375,7 +373,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -440,7 +438,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-          <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
         </div>
     
   
@@ -451,190 +449,312 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-      
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
     
-    <h2 class="article-title" >
-      <a href="/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/">
+      <h1 class="title">
         深度学习（一）：准备
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        深度学习（一）：准备课程：00-03
-准备打算
-
- 现在的一个打算是跟着李沐学。
-有配套的视频和书，也有一个课程竞赛
-问题就是我听不听得到下去。
-慢慢啃呗，之前的人工智能导论课好像有点难的样子，但实际上就那样。
-这肯定比算法要容易。
-同时去学习一下pytorch
-
-思路
-
- 先是从零实现一切，再使用高级API
-
-这门课的目的
-
-介绍深度学习经典和最新的模型
-机器学习基础
-实践
-
-然后我们可以...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
-        <time>2021-08-14</time>
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>kasane</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月14日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="深度学习（一）：准备" data-path="/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="深度学习（一）：准备"><a href="#深度学习（一）：准备" class="headerlink" title="深度学习（一）：准备"></a>深度学习（一）：准备</h2><p>课程：00-03</p>
+<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><p>打算</p>
+<blockquote>
+<p> 现在的一个打算是跟着李沐学。</p>
+<p>有配套的视频和书，也有一个课程竞赛</p>
+<p>问题就是我听不听得到下去。</p>
+<p>慢慢啃呗，之前的人工智能导论课好像有点难的样子，但实际上就那样。</p>
+<p>这肯定比算法要容易。</p>
+<p>同时去学习一下pytorch</p>
+</blockquote>
+<p>思路</p>
+<blockquote>
+<p> 先是从零实现一切，再使用高级API</p>
+</blockquote>
+<p>这门课的目的</p>
+<blockquote>
+<p>介绍深度学习经典和最新的模型</p>
+<p>机器学习基础</p>
+<p>实践</p>
+</blockquote>
+<p>然后我们可以学到的知识</p>
+<blockquote>
+<p> 深度学习里有哪些技术</p>
+<p>如何实现和调参</p>
+<p>背后的原因（直觉，数学）（其实我觉得是原理？）</p>
+</blockquote>
+<p>深度学习的一些应用</p>
+<blockquote>
+<p>物体检测和分割</p>
+<p>样式迁移（如给图片加滤镜，就是把滤镜的这个样式迁移到图片中）</p>
+<p>人脸合成</p>
+<p>文字生成图片</p>
+<p>生成文字</p>
+<p>无人驾驶</p>
+</blockquote>
+<p>一个案例分析-广告点击</p>
+<blockquote>
+<p>预测与训练</p>
+<ol>
+<li>特征提取</li>
+<li>模型</li>
+<li>点击率预测</li>
+<li>训练数据（过去广告展现和用户点击）</li>
+<li>特征和用户点击</li>
+<li>模型</li>
+</ol>
+</blockquote>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>需要配置一个环境来运行python、jupyter notebook、相关库和书中的代码。</p>
+<ol>
+<li>使用conda/miniconda环境</li>
+<li>安装需要的包</li>
+<li>下载代码并执行</li>
+</ol>
+<p>使用conda创建一个虚拟环境，然后在里面下jupyter、d2l,torch等库.</p>
+<blockquote>
+<p>我在D盘的soft文件下下了miniconda3，然后在D盘的leaning_dl中下载了d2l-zh，然后需要建一个虚拟环境</p>
+<p>虚拟环境随便在哪建，最后都是建在了conda里面的envs下。</p>
+<p>在虚拟环境中还需要执行的操作是把d2软件包下载下来，可以直接使用pip。</p>
+<p>还要下torch。</p>
+<p>现在的使用方法是，在leaning_dl中打开cmd窗口，激活环境，打开jupyter notebook，就可以打开d2l-zh了。</p>
+</blockquote>
+<p>具体流程</p>
+<blockquote>
+<ol>
+<li>安装miniconda3</li>
+<li>下载d2l.zh</li>
+<li>创建虚拟环境</li>
+<li>在虚拟环境内安装torch,torchvision和d2l软件包</li>
+<li>激活该虚拟环境，打开jupyter notebook</li>
+<li>注意其内核，如果没有可以新创一个内核。</li>
+<li>尝试运行，看内核是否正常，代码是否正常运行。</li>
+</ol>
+</blockquote>
+<h6 id="关于conda的一些操作"><a href="#关于conda的一些操作" class="headerlink" title="关于conda的一些操作"></a>关于conda的一些操作</h6><p>查看环境包</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs</span><br></pre></td></tr></table></figure>
+
+<p>删除环境</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove -n 环境名 --all</span><br></pre></td></tr></table></figure>
+
+<p>创建新的环境</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name d2l python=3.8 -y</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 配置清华PyPI镜像（如无法运行，将pip版本升级到&gt;=10.0.0）</span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/>http://example.com/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-08-14T22:35:20+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年8月14日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/14/%E4%BD%A0%E5%A5%BD%E5%95%8A/">
-        这是第一篇文章
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        这里是正文吗？
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>深度学习</p></a></div>
 
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/&title=深度学习（一）：准备 - Kasane's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/&title=深度学习（一）：准备 - Kasane's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/&title=深度学习（一）：准备 - Kasane's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/14/%E4%BD%A0%E5%A5%BD%E5%95%8A/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/12/hello-world/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-12</time>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2021/08/12/hello-world/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/2021/08/14/%E4%BD%A0%E5%A5%BD%E5%95%8A/'>
+          <p class='title'>这是第一篇文章<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>这里是正文吗？
+</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
+
+
+
+
 
 
 </div>
@@ -644,98 +764,22 @@ Qu...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Kasane's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">深度学习</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87"><span class="toc-text">深度学习（一）：准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
-
-  
 
   
 
@@ -750,21 +794,21 @@ Qu...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="深度学习（一）：准备";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="full";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

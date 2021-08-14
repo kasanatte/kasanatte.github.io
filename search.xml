@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>深度学习（一）：准备</title>
+      <link href="/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/"/>
+      <url>/2021/08/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%87%86%E5%A4%87%E4%B8%8E%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h2 id="深度学习（一）：准备"><a href="#深度学习（一）：准备" class="headerlink" title="深度学习（一）：准备"></a>深度学习（一）：准备</h2><p>课程：00-03</p><h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><p>打算</p><blockquote><p> 现在的一个打算是跟着李沐学。</p><p>有配套的视频和书，也有一个课程竞赛</p><p>问题就是我听不听得到下去。</p><p>慢慢啃呗，之前的人工智能导论课好像有点难的样子，但实际上就那样。</p><p>这肯定比算法要容易。</p><p>同时去学习一下pytorch</p></blockquote><p>思路</p><blockquote><p> 先是从零实现一切，再使用高级API</p></blockquote><p>这门课的目的</p><blockquote><p>介绍深度学习经典和最新的模型</p><p>机器学习基础</p><p>实践</p></blockquote><p>然后我们可以学到的知识</p><blockquote><p> 深度学习里有哪些技术</p><p>如何实现和调参</p><p>背后的原因（直觉，数学）（其实我觉得是原理？）</p></blockquote><p>深度学习的一些应用</p><blockquote><p>物体检测和分割</p><p>样式迁移（如给图片加滤镜，就是把滤镜的这个样式迁移到图片中）</p><p>人脸合成</p><p>文字生成图片</p><p>生成文字</p><p>无人驾驶</p></blockquote><p>一个案例分析-广告点击</p><blockquote><p>预测与训练</p><ol><li>特征提取</li><li>模型</li><li>点击率预测</li><li>训练数据（过去广告展现和用户点击）</li><li>特征和用户点击</li><li>模型</li></ol></blockquote><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>需要配置一个环境来运行python、jupyter notebook、相关库和书中的代码。</p><ol><li>使用conda/miniconda环境</li><li>安装需要的包</li><li>下载代码并执行</li></ol><p>使用conda创建一个虚拟环境，然后在里面下jupyter、d2l,torch等库.</p><blockquote><p>我在D盘的soft文件下下了miniconda3，然后在D盘的leaning_dl中下载了d2l-zh，然后需要建一个虚拟环境</p><p>虚拟环境随便在哪建，最后都是建在了conda里面的envs下。</p><p>在虚拟环境中还需要执行的操作是把d2软件包下载下来，可以直接使用pip。</p><p>还要下torch。</p><p>现在的使用方法是，在leaning_dl中打开cmd窗口，激活环境，打开jupyter notebook，就可以打开d2l-zh了。</p></blockquote><p>具体流程</p><blockquote><ol><li>安装miniconda3</li><li>下载d2l.zh</li><li>创建虚拟环境</li><li>在虚拟环境内安装torch,torchvision和d2l软件包</li><li>激活该虚拟环境，打开jupyter notebook</li><li>注意其内核，如果没有可以新创一个内核。</li><li>尝试运行，看内核是否正常，代码是否正常运行。</li></ol></blockquote><h6 id="关于conda的一些操作"><a href="#关于conda的一些操作" class="headerlink" title="关于conda的一些操作"></a>关于conda的一些操作</h6><p>查看环境包</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs</span><br></pre></td></tr></table></figure><p>删除环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove -n 环境名 --all</span><br></pre></td></tr></table></figure><p>创建新的环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name d2l python=3.8 -y</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 配置清华PyPI镜像（如无法运行，将pip版本升级到&gt;=10.0.0）</span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>这是第一篇文章</title>
       <link href="/2021/08/14/%E4%BD%A0%E5%A5%BD%E5%95%8A/"/>
       <url>/2021/08/14/%E4%BD%A0%E5%A5%BD%E5%95%8A/</url>
